@@ -1,0 +1,36 @@
+table {
+      border: 2px solid black;
+      height: 80vh;
+      width: 45vw;
+      margin: 0px;
+      border-spacing: 0px;
+}
+
+th {
+      height: 10%;
+      border: 2px solid black;
+      font-size: 250%;
+      font-family: Monospace;
+      text-align: center;
+      background-color: lightgrey;
+}
+
+td {
+      border: 2px solid black;
+      width: 50%;
+      height: 9%;
+      font-size: 120%;
+      font-family: Monospace;
+      text-align: center;
+}
+
+button {
+      height: 150%;
+      width: 50%;
+      margin: 1%;
+      font-size: 150%;
+      font-family: Monospace;
+      text-align: center;
+      border-radius:2.5px;
+      border: 2px solid black;
+}
