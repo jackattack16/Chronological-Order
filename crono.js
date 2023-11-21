@@ -14,7 +14,7 @@ const numToEvent = [
 'mohammad first revelation',
 'hejira',
  'muhammad dies',
-/*'split of the islamic faith',
+'split of the islamic faith',
 'abu bakr becomes caliph',
 'umayyids rise',
 'umayyids fall',
@@ -108,8 +108,8 @@ const numToEvent = [
 'intifada ii intifada 2000',
 'nicolas maduro to president of venezuela',
 'russia annexes crimea',
-'russo-ukraine war', */
-'2023 ahs honors finals'
+'russo-ukraine war', 
+'2023.5 ahs honors finals'
 ];
 let currentCellSelectContent = "";
 
