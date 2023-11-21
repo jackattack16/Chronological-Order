@@ -190,8 +190,8 @@ function check() {
                   let urAss = curCell.innerText;
                   curCell.style.background = "#E63C3C";
                   if (document.getElementById("checkBox").checked) {
-                  let newContent = "You said: " + urAss + "  Correct Answer: " + numToEvent[numList[g]-1] + ".";
-                  curCell.innerText = newContent;
+                  let newContent = "You said: " + urAss + "<b>" + "  Correct Answer: " + numToEvent[numList[g]-1] + "." + "<b/>";
+                  curCell.innerHTML = newContent;
                   }
                   
             }
