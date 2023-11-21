@@ -13,8 +13,8 @@ const numToEvent = [
 'mohammad born',
 'mohammad first revelation',
 'hejira',
-'muhammad dies',
-'split of the islamic faith',
+ 'muhammad dies',
+/*'split of the islamic faith',
 'abu bakr becomes caliph',
 'umayyids rise',
 'umayyids fall',
@@ -108,7 +108,7 @@ const numToEvent = [
 'intifada ii intifada 2000',
 'nicolas maduro to president of venezuela',
 'russia annexes crimea',
-'russo-ukraine war',
+'russo-ukraine war', */
 '2023 ahs honors finals'
 ];
 let currentCellSelectContent = "";
@@ -152,6 +152,7 @@ function makeList() {
       for (let y = 0; y < 10; y++) {
             var h = y + 1;
             document.getElementById("order" + h).innerText = "";
+            document.getElementById("order" + h).style.background = "white";
       }
       let place = Math.floor(Math.random() * numToEvent.length);
       for (let x = 0; x < 10; x++) {
@@ -178,12 +179,25 @@ function check() {
             }
          
       }
+      let gPlus = 1;
       for (let g = 0; g < 10; g++) {
+            let curCell = document.getElementById("order" + gPlus)
             if (yourOrder[g] == numList[g]) {
                   score++;
+                  curCell.style.background = "#3CE66C";
+            } else {
+                  
+                  let urAss = curCell.innerText;
+                  curCell.style.background = "#E63C3C";
+                  if (document.getElementById("checkBox").checked) {
+                  let newContent = "You said: " + urAss + "  Correct Answer: " + numToEvent[numList[g]-1] + ".";
+                  curCell.innerText = newContent;
+                  }
+                  
             }
-           
+           gPlus++;
 }
+
 if(score == 1) {
        alert("You scored " + score + " point!");
 } else {
@@ -191,3 +205,4 @@ if(score == 1) {
 }
 
 }
+
