@@ -109,7 +109,7 @@ const numToEvent = [
 'nicolas maduro to president of venezuela',
 'russia annexes crimea',
 'russo-ukraine war', 
-'2023.5 ahs honors finals'
+'2023 ahs honors finals'
 ];
 let currentCellSelectContent = "";
 
@@ -188,10 +188,16 @@ function check() {
             } else {
                   
                   let urAss = curCell.innerText;
-                  curCell.style.background = "#E63C3C";
+                  if (urAss.includes("You said:")) {
+                    curCell.style.background = "#E63C3C";
+                  } else {
+                    curCell.style.background = "#E63C3C";
                   if (document.getElementById("checkBox").checked) {
                   let newContent = "You said: " + urAss + "<b>" + "  Correct Answer: " + numToEvent[numList[g]-1] + "." + "<b/>";
                   curCell.innerHTML = newContent;
+                  }
+                    
+                  
                   }
                   
             }
